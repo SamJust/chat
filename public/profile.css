@@ -1,0 +1,20 @@
+body{
+  margin: 25px;
+  margin-top: 0px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#top{
+  background-color: #1959c1;
+  height: 70px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+#sendFriendRequest, #acceptFriendsRequests{
+  cursor: pointer;
+}

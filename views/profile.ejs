@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="/public/profile.css">
+    <script type="text/javascript" src="/public/javaScript/profile.js"></script>
+  </head>
+  <body>
+    <div id="top"><%=data.username%></div>
+    <%=data.email%>
+    <br> Friends: <%=data._doc.friends.join(' ')%>
+    <%if(showFriendsButton === "yes"){%><p id="sendFriendRequest">send friend request</p><%}%>
+    <%if(showFriendsButton === "alreadySent"){%><p>request already sent</p><%}%>
+    <%if(showFriendsButton === "alreadyRecieved"){%><p id="acceptFriendsRequests">request recieved</p><%}%>
+    <br>
+    <% if(data._doc.recievedRequests.length != 0 && data.username == username){
+      for(let i = 0; i < data._doc.recievedRequests.length; i++){%>
+        <a href="/profile/<%=data._doc.recievedRequests[i]%>"><%=data._doc.recievedRequests[i]%></a>
+      <%}
+    }%>
+  </body>
+</html>

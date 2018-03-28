@@ -1,0 +1,91 @@
+body{
+  margin: 25px;
+  margin-top: 0px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#userControlls{
+  font-size: 15px;
+  display: none;
+}
+
+#samschat{
+  cursor: pointer;
+}
+
+#searchField{
+  text-align: left;
+  position: absolute;
+  left: 30px;
+  top: 5%;
+}
+
+#searchButton{
+  position: absolute;
+  left: 20%;
+  top: 5%;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+#top{
+  background-color: #1959c1;
+  height: 10vh;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+#nav{
+  width: 20%;
+  overflow: auto;
+  height: 80vh;
+}
+
+#line{
+  border: 0.5px solid black;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  height: 85vh;
+}
+
+#chat{
+  width: 80%;
+  overflow: auto;
+  height: 80vh;
+  background-color: ;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+main{
+  display: flex;
+}
+
+.friend{
+  padding-left: 10px;
+  background-color: lightgray;
+  cursor: pointer;
+  margin: 2px 5px;
+}
+
+.messageYour{
+  text-align: right;
+  margin-bottom: 0px;
+  width: 80%;
+}
+
+.messageOthers{
+  margin-bottom: 0px;
+  width: 80%;
+  text-align: left;
+}
+
+#sendFriendRequest{
+  color: black;
+}
